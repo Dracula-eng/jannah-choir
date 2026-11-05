@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07130e">
+  <meta name="description" content="Jannah Choir — كورال جنة. متجمعين في حب الرسول ﷺ. إنشاد ديني نسائي بالدف وبدون موسيقى.">
+  <title>Jannah Choir | كورال جنة</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --green: #07130e;
+      --green2: #10251a;
+      --gold: #d8b66a;
+      --gold-light: #f4dfaa;
+      --muted: #d7c9a7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--gold-light);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(ellipse at 50% 20%, rgba(38,76,51,.42), transparent 48%),
+        radial-gradient(ellipse at 50% 100%, rgba(139,102,43,.12), transparent 55%),
+        linear-gradient(145deg, #101711, var(--green) 52%, #050b08);
+      display: flex; justify-content: center; align-items: center;
+      padding: 28px 16px;
+    }
+    .page {
+      width: min(100%, 460px); position: relative; overflow: hidden;
+      text-align: center; padding: 30px 24px 34px;
+      border: 1px solid rgba(216,182,106,.72);
+      border-radius: 22px;
+      box-shadow: 0 22px 70px rgba(0,0,0,.48), inset 0 0 35px rgba(216,182,106,.055);
+      background: linear-gradient(160deg, rgba(17,37,26,.88), rgba(5,14,10,.96));
+    }
+    .page:before, .page:after {
+      content: "✧"; position: absolute; color: var(--gold);
+      font-size: 25px; opacity: .9; top: 10px;
+    }
+    .page:before { left: 14px; } .page:after { right: 14px; }
+    .ornament { color: var(--gold); letter-spacing: .4em; font-size: 18px; margin: 0 0 12px; }
+    .logo {
+      display: block; width: min(100%, 340px); height: auto; margin: 0 auto 8px;
+      border-radius: 12px; mix-blend-mode: screen;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+    }
+    .tagline {
+      direction: rtl; font-family: Tahoma, Arial, sans-serif;
+      font-size: clamp(19px, 5vw, 23px); font-weight: 600;
+      color: var(--gold-light); margin: 8px 0 8px;
+    }
+    .description {
+      direction: rtl; font-family: Tahoma, Arial, sans-serif;
+      font-size: 16px; line-height: 1.9; color: var(--muted);
+      margin: 0 auto 24px; max-width: 340px;
+    }
+    .divider { height: 1px; width: 68%; margin: 18px auto 22px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+    .links { display: grid; gap: 13px; }
+    .social {
+      min-height: 54px; display: flex; align-items: center; justify-content: center;
+      gap: 12px; padding: 13px 18px; border-radius: 12px;
+      color: #f8e8bf; text-decoration: none; font: 600 16px Arial, sans-serif;
+      border: 1px solid rgba(216,182,106,.72);
+      background: linear-gradient(110deg, rgba(216,182,106,.14), rgba(216,182,106,.045));
+      transition: transform .18s ease, background .18s ease, border-color .18s ease;
+    }
+    .social:hover, .social:focus-visible {
+      transform: translateY(-2px); outline: none;
+      background: rgba(216,182,106,.22); border-color: var(--gold-light);
+    }
+    .social svg { width: 21px; height: 21px; fill: currentColor; flex: 0 0 auto; }
+    .footer { color: #b8a477; font: 12px Arial, sans-serif; margin-top: 27px; letter-spacing: .06em; }
+    @media (max-width: 380px) { .page { padding: 26px 17px 28px; } .logo { width: 100%; } }
+    @media (prefers-reduced-motion: reduce) { .social { transition: none; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="ornament" aria-hidden="true">✧ ───── ❖ ───── ✧</div>
+    <img class="logo" src="assets/jannah-choir-logo.jpg" alt="شعار كورال جنة">
+    <p class="tagline">متجمعين في حب الرسول ﷺ</p>
+    <p class="description">إنشاد ديني نسائي<br>بالدف وبدون موسيقى</p>
+    <div class="divider" aria-hidden="true"></div>
+    <nav class="links" aria-label="تابعوا كورال جنة">
+      <a class="social" href="https://www.facebook.com/people/Jannah-Choir-%D9%83%D9%88%D8%B1%D8%A7%D9%84-%D8%AC%D9%86%D8%A9/100091884224583/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.3V13h2.8v8h3.4z"/></svg>
+        Facebook
+      </a>
+      <a class="social" href="https://www.instagram.com/jannah_choir/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8zm4.2 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>
+        Instagram
+      </a>
+      <a class="social" href="https://www.tiktok.com/@jannah_choir" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 7.1a6.7 6.7 0 0 1-4.1-1.4v8.1a6.2 6.2 0 1 1-5.4-6.1v3.2a3.1 3.1 0 1 0 2.2 3V2h3.2c.2 2 1.8 3.6 4.1 3.8v3.2z"/></svg>
+        TikTok
+      </a>
+    </nav>
+    <div class="footer">J A N N A H &nbsp; C H O I R</div>
+  </main>
+</body>
+</html>
